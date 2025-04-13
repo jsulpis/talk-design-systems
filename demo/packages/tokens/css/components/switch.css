@@ -1,0 +1,11 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --ds-switch-track-border-radius: var(--ds-spacing-max);
+  --ds-switch-track-height: var(--ds-spacing-5);
+  --ds-switch-track-width: var(--ds-spacing-8);
+  --ds-switch-thumb-border-radius: var(--ds-spacing-max);
+  --ds-switch-thumb-size: var(--ds-spacing-4);
+}

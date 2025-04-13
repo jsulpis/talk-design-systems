@@ -1,0 +1,13 @@
+{
+   "name": "@ds/tokens",
+   "files": [
+      "css"
+   ],
+   "scripts": {
+      "build": "rimraf css && style-dictionary build --silent"
+   },
+   "devDependencies": {
+      "rimraf": "6.0.1",
+      "style-dictionary": "4.3.3"
+   }
+}

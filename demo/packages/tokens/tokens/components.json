@@ -1,0 +1,112 @@
+{
+  "button": {
+    "padding": {
+      "vertical": {
+        "value": "{spacing.2}",
+        "type": "dimension"
+      },
+      "horizontal": {
+        "value": "{spacing.3}",
+        "type": "dimension"
+      }
+    },
+    "primary": {
+      "default": {
+        "backgroundColor": {
+          "value": "{color.primary.500}",
+          "type": "color"
+        },
+        "textColor": {
+          "value": "{color.white}",
+          "type": "color"
+        },
+        "border": {
+          "value": {
+            "width": "2px",
+            "color": "{color.primary.500}",
+            "style": "solid"
+          },
+          "type": "border"
+        }
+      },
+      "hover": {
+        "backgroundColor": {
+          "value": "{color.primary.400}",
+          "type": "color"
+        },
+        "border": {
+          "value": {
+            "width": "2px",
+            "color": "{color.primary.400}",
+            "style": "solid"
+          },
+          "type": "border"
+        }
+      }
+    },
+    "secondary": {
+      "default": {
+        "backgroundColor": {
+          "value": "transparent",
+          "type": "color"
+        },
+        "textColor": {
+          "value": "{color.primary.500}",
+          "type": "color"
+        },
+        "border": {
+          "value": {
+            "width": "2px",
+            "color": "{color.primary.500}",
+            "style": "solid"
+          },
+          "type": "border"
+        }
+      },
+      "hover": {
+        "backgroundColor": {
+          "value": "{color.primary.500}",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "select": {
+    "padding": {
+      "vertical": {
+        "value": "{spacing.2}",
+        "type": "dimension"
+      },
+      "horizontal": {
+        "value": "{spacing.4}",
+        "type": "dimension"
+      }
+    }
+  },
+  "switch": {
+    "track": {
+      "borderRadius": {
+        "value": "{spacing.max}",
+        "type": "borderRadius"
+      },
+      "height": {
+        "value": "{spacing.5}",
+        "type": "dimension"
+      },
+      "width": {
+        "value": "{spacing.8}",
+        "type": "dimension"
+      }
+    },
+    "thumb": {
+      "borderRadius": {
+        "value": "{spacing.max}",
+        "type": "borderRadius"
+      },
+      "size": {
+        "value": "{spacing.4}",
+        "type": "dimension"
+      }
+    }
+  }
+}

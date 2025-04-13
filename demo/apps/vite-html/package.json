@@ -1,19 +1,19 @@
 {
-   "name": "vite-html",
-   "version": "0.0.0",
-   "private": true,
-   "type": "module",
-   "scripts": {
-      "build": "vite build",
-      "dev": "vite",
-      "preview": "vite preview"
-   },
-   "dependencies": {
-      "@ds/css": "workspace:^",
-      "@ds/tokens": "workspace:^",
-      "@ds/web-components": "workspace:^"
-   },
-   "devDependencies": {
-      "vite": "^6.2.0"
-   }
+  "name": "vite-html",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ds/css": "workspace:^",
+    "@ds/tokens": "workspace:^",
+    "@ds/web-components": "workspace:^"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
 }

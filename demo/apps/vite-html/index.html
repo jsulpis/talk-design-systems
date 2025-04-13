@@ -1,40 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Vite HTML</title>
-      <link rel="stylesheet" href="./node_modules/@ds/tokens/css/theme.css" />
-      <link rel="stylesheet" href="./node_modules/@ds/css/dist/base.css" />
-      <script
-         type="module"
-         src="/node_modules/@ds/web-components/dist/esm/ds-web-components.js"
-      ></script>
-      <style>
-         body {
-            height: 100svh;
-            display: grid;
-            place-items: center;
-         }
-         form {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-         }
-      </style>
-   </head>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite HTML</title>
+    <link rel="stylesheet" href="./node_modules/@ds/tokens/css/theme.css" />
+    <link rel="stylesheet" href="./node_modules/@ds/css/dist/base.css" />
+    <script type="module" src="/node_modules/@ds/web-components/dist/esm/ds-web-components.js"></script>
+    <style>
+      body {
+        height: 100svh;
+        display: grid;
+        place-items: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    </style>
+  </head>
 
-   <body>
-      <form>
-         <ds-input label="Name" placeholder="John Doe"></ds-input>
-         <ds-input
-            type="email"
-            label="Email"
-            placeholder="john@doe.com"
-            required
-         ></ds-input>
-         <ds-button>Send</ds-button>
-      </form>
-   </body>
+  <body>
+    <form>
+      <ds-input label="Name" placeholder="John Doe"></ds-input>
+      <ds-input type="email" label="Email" placeholder="john@doe.com" required></ds-input>
+      <ds-button>Send</ds-button>
+    </form>
+  </body>
 </html>

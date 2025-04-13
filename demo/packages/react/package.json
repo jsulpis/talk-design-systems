@@ -1,24 +1,23 @@
 {
-   "name": "@ds/react",
-   "main": "dist/components.js",
-   "module": "dist/components.js",
-   "types": "dist/types/components.d.ts",
-   "files": [
-      "dist"
-   ],
-   "scripts": {
-      "build": "rimraf dist && tsc -p ."
-   },
-   "dependencies": {
-      "@ds/web-components": "workspace:^",
-      "@stencil/react-output-target": "1.0.2"
-   },
-   "devDependencies": {
-      "@types/react": "19.1.1",
-      "react": "19.1.0",
-      "react-dom": "19.1.0",
-      "rimraf": "6.0.1",
-      "typescript": "5.8.3"
-   },
-   "packageManager": "pnpm@10.7.1"
+  "name": "@ds/react",
+  "main": "dist/components.js",
+  "module": "dist/components.js",
+  "types": "dist/types/components.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc -p ."
+  },
+  "dependencies": {
+    "@ds/web-components": "workspace:^",
+    "@stencil/react-output-target": "1.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "rimraf": "6.0.1",
+    "typescript": "5.8.3"
+  }
 }

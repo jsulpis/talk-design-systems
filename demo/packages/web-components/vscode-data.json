@@ -1,0 +1,78 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "ds-button",
+      "description": {
+        "kind": "markdown",
+        "value": "Our custom button component"
+      },
+      "attributes": [
+        {
+          "name": "disabled",
+          "description": "If the button is disabled"
+        },
+        {
+          "name": "type",
+          "description": "The type of the button",
+          "values": [
+            {
+              "name": "button"
+            },
+            {
+              "name": "reset"
+            },
+            {
+              "name": "submit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ds-input",
+      "description": {
+        "kind": "markdown",
+        "value": "Our custom input component"
+      },
+      "attributes": [
+        {
+          "name": "label",
+          "description": "The label of the input"
+        },
+        {
+          "name": "placeholder",
+          "description": "The placeholder of the input"
+        },
+        {
+          "name": "required",
+          "description": "If the input is required"
+        },
+        {
+          "name": "type",
+          "description": "The type of the input",
+          "values": [
+            {
+              "name": "email"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "password"
+            },
+            {
+              "name": "tel"
+            },
+            {
+              "name": "text"
+            },
+            {
+              "name": "url"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

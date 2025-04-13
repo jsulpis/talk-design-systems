@@ -1,4 +1,5 @@
 {
+   "cssVariables.languages": ["scss", "postcss", "less", "css"],
    "cssVariables.blacklistFolders": [
       "**/.git",
       "**/.svn",
@@ -9,5 +10,6 @@
       "**/bower_components",
       "**/tmp",
       "**/tests"
-   ]
+   ],
+   "html.customData": ["./demo/packages/web-components/vscode-data.json"]
 }

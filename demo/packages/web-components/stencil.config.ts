@@ -15,6 +15,10 @@ export const config: Config = {
       externalRuntime: false,
     },
     {
+      type: 'docs-vscode',
+      file: 'vscode-data.json',
+    },
+    {
       type: 'docs-readme',
     },
     {
@@ -32,6 +36,9 @@ export const config: Config = {
       ],
     },
   ],
+  extras: {
+    enableImportInjection: true,
+  },
   testing: {
     browserHeadless: 'shell',
   },

@@ -2,11 +2,15 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
+      <link rel="icon" type="image/svg+xml" href="/vite.svg" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>DS Playground</title>
+      <title>Vite HTML</title>
       <link rel="stylesheet" href="./node_modules/@ds/tokens/css/theme.css" />
-      <link rel="stylesheet" href="./src/base.scss" />
-      <link rel="stylesheet" href="./src/components.scss" />
+      <link rel="stylesheet" href="./node_modules/@ds/css/dist/base.css" />
+      <script
+         type="module"
+         src="/node_modules/@ds/web-components/dist/esm/ds-web-components.js"
+      ></script>
       <style>
          body {
             height: 100svh;
@@ -23,17 +27,9 @@
 
    <body>
       <form>
-         <label class="ds-input">
-            <input type="text" placeholder="John Doe" required />
-            <span>Name</span>
-         </label>
-
-         <label class="ds-input">
-            <input type="email" placeholder="john@doe.com" required />
-            <span>Email</span>
-         </label>
-
-         <button class="ds-button">Send</button>
+         <ds-input label="Name" placeholder="John Doe"></ds-input>
+         <ds-input label="Email" placeholder="john@doe.com" required></ds-input>
+         <ds-button>Send</ds-button>
       </form>
    </body>
 </html>

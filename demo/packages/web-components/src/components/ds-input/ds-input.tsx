@@ -1,14 +1,31 @@
 import { Component, h, Prop } from '@stencil/core';
 
+/**
+ * Our custom input component
+ */
 @Component({
   tag: 'ds-input',
   styleUrl: 'ds-input.scss',
 })
 export class DsInput {
+  /**
+   * The label of the input
+   * @required
+   */
   @Prop() label: string;
+  /**
+   * The placeholder of the input
+   */
   @Prop() placeholder: string;
+  /**
+   * If the input is required
+   */
   @Prop() required: boolean;
-  @Prop() type: string = 'text';
+  /**
+   * The type of the input
+   * @default "text"
+   */
+  @Prop() type: 'text' | 'email' | 'password' | 'number' | 'tel' | 'url' = 'text';
 
   render() {
     return (

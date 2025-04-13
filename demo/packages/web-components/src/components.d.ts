@@ -6,22 +6,58 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    /**
+     * Our custom button component
+     */
     interface DsButton {
+        /**
+          * If the button is disabled
+          * @default false
+         */
+        "disabled": boolean;
+        /**
+          * The type of the button
+          * @default "button"
+         */
+        "type": 'button' | 'submit' | 'reset';
     }
+    /**
+     * Our custom input component
+     */
     interface DsInput {
+        /**
+          * The label of the input
+          * @required
+         */
         "label": string;
+        /**
+          * The placeholder of the input
+         */
         "placeholder": string;
+        /**
+          * If the input is required
+         */
         "required": boolean;
-        "type": string;
+        /**
+          * The type of the input
+          * @default "text"
+         */
+        "type": 'text' | 'email' | 'password' | 'number' | 'tel' | 'url';
     }
 }
 declare global {
+    /**
+     * Our custom button component
+     */
     interface HTMLDsButtonElement extends Components.DsButton, HTMLStencilElement {
     }
     var HTMLDsButtonElement: {
         prototype: HTMLDsButtonElement;
         new (): HTMLDsButtonElement;
     };
+    /**
+     * Our custom input component
+     */
     interface HTMLDsInputElement extends Components.DsInput, HTMLStencilElement {
     }
     var HTMLDsInputElement: {
@@ -34,13 +70,43 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    /**
+     * Our custom button component
+     */
     interface DsButton {
+        /**
+          * If the button is disabled
+          * @default false
+         */
+        "disabled"?: boolean;
+        /**
+          * The type of the button
+          * @default "button"
+         */
+        "type"?: 'button' | 'submit' | 'reset';
     }
+    /**
+     * Our custom input component
+     */
     interface DsInput {
+        /**
+          * The label of the input
+          * @required
+         */
         "label"?: string;
+        /**
+          * The placeholder of the input
+         */
         "placeholder"?: string;
+        /**
+          * If the input is required
+         */
         "required"?: boolean;
-        "type"?: string;
+        /**
+          * The type of the input
+          * @default "text"
+         */
+        "type"?: 'text' | 'email' | 'password' | 'number' | 'tel' | 'url';
     }
     interface IntrinsicElements {
         "ds-button": DsButton;
@@ -51,7 +117,13 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            /**
+             * Our custom button component
+             */
             "ds-button": LocalJSX.DsButton & JSXBase.HTMLAttributes<HTMLDsButtonElement>;
+            /**
+             * Our custom input component
+             */
             "ds-input": LocalJSX.DsInput & JSXBase.HTMLAttributes<HTMLDsInputElement>;
         }
     }

@@ -1,0 +1,6 @@
+body {
+  font-family: var(--ds-typo-font-family);
+  font-size: var(--ds-typo-font-size-body);
+  line-height: var(--ds-typo-font-line-height);
+  color: var(--ds-typo-font-color);
+}

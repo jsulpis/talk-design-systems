@@ -1,5 +1,6 @@
 {
    "name": "@ds/tokens",
+   "type": "module",
    "files": [
       "css"
    ],

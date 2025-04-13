@@ -1,0 +1,15 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --ds-input-border-style: solid;
+  --ds-input-height: var(--ds-size-md);
+  --ds-input-font-color: var(--ds-color-gray-700);
+  --ds-input-font-weight: var(--ds-typo-font-weight-bold);
+  --ds-input-font-size: var(--ds-typo-font-size-body);
+  --ds-input-padding-horizontal: var(--ds-spacing-4);
+  --ds-input-border-width: var(--ds-border-width-md);
+  --ds-input-border-radius: var(--ds-border-radius-md);
+  --ds-input-border-color: var(--ds-color-gray-300);
+}

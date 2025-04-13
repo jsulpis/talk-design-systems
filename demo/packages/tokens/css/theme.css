@@ -1,0 +1,51 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --ds-color-black: #000000;
+  --ds-color-white: #ffffff;
+  --ds-color-gray-100: #f7fafc;
+  --ds-color-gray-200: #edf2f7;
+  --ds-color-gray-300: #e2e8f0;
+  --ds-color-gray-400: #cbd5e0;
+  --ds-color-gray-500: #a0aec0;
+  --ds-color-gray-600: #718096;
+  --ds-color-gray-700: #4a5568;
+  --ds-color-gray-800: #2d3748;
+  --ds-color-gray-900: #1a202c;
+  --ds-color-primary-100: #fffaf0;
+  --ds-color-primary-200: #feebc8;
+  --ds-color-primary-300: #fbd38d;
+  --ds-color-primary-400: #f6ad55;
+  --ds-color-primary-500: #ed8936;
+  --ds-color-primary-600: #dd6b20;
+  --ds-color-primary-700: #c05621;
+  --ds-color-primary-800: #9c4221;
+  --ds-color-primary-900: #7b341e;
+  --ds-spacing-0: 0rem;
+  --ds-spacing-1: 0.25rem;
+  --ds-spacing-2: 0.5rem;
+  --ds-spacing-3: 0.75rem;
+  --ds-spacing-4: 1rem;
+  --ds-spacing-5: 1.25rem;
+  --ds-spacing-6: 1.5rem;
+  --ds-spacing-7: 1.75rem;
+  --ds-spacing-8: 2rem;
+  --ds-spacing-max: 624.9375rem;
+  --ds-border-radius-sm: 0.125rem;
+  --ds-border-radius-md: 0.25rem;
+  --ds-border-radius-lg: 0.5rem;
+  --ds-border-width-sm: 0.0625rem;
+  --ds-border-width-md: 0.125rem;
+  --ds-border-width-lg: 0.25rem;
+  --ds-size-sm: 2rem;
+  --ds-size-md: 2.5rem;
+  --ds-size-lg: 2.875rem;
+  --ds-typo-font-family: Arial, sans-serif;
+  --ds-typo-font-size-body: 1rem;
+  --ds-typo-font-line-height: 1.5;
+  --ds-typo-font-color: #4a5568;
+  --ds-typo-font-weight-normal: 400;
+  --ds-typo-font-weight-bold: 700;
+}

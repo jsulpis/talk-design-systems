@@ -1,0 +1,20 @@
+{
+   "name": "@ds/css",
+   "version": "0.0.0",
+   "private": true,
+   "type": "module",
+   "files": [
+      "dist"
+   ],
+   "scripts": {
+      "build": " rimraf dist && sass --load-path=node_modules --no-source-map src:dist ",
+      "dev": "vite"
+   },
+   "devDependencies": {
+      "@ds/tokens": "workspace:^",
+      "rimraf": "6.0.1",
+      "sass": "1.86.3",
+      "sass-import-modules": "8.0.0",
+      "vite": "^6.2.0"
+   }
+}

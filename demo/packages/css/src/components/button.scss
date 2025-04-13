@@ -1,0 +1,26 @@
+@use "@ds/tokens/css/components/button";
+
+.ds-button {
+   border: 0;
+   padding: 0 var(--ds-button-padding-horizontal);
+   border-radius: var(--ds-button-border-radius);
+   background: var(--ds-button-primary-default-background-color);
+   color: var(--ds-button-primary-default-text-color);
+   font-weight: var(--ds-button-font-weight);
+   font-size: var(--ds-button-font-size);
+   height: var(--ds-button-height);
+   cursor: pointer;
+
+   &:hover {
+      background: var(--ds-button-primary-hover-background-color);
+   }
+
+   &:active {
+      background: var(--ds-button-primary-active-background-color);
+   }
+
+   &:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 0.15em var(--ds-button-focus-color);
+   }
+}

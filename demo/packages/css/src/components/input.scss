@@ -1,0 +1,80 @@
+@use "@ds/tokens/css/components/input.css";
+
+.ds-input {
+   label:is(&) {
+      color: var(--ds-input-font-color);
+      display: flex;
+      position: relative;
+      font-size: 1rem;
+      height: var(--ds-input-height);
+
+      span {
+         position: absolute;
+         pointer-events: none;
+         margin: 0;
+         left: 0;
+         transform: translateX(
+            calc(var(--ds-input-padding-horizontal) - 0.25em)
+         );
+         top: calc(50% - 1em / 2);
+         font-size: 1em;
+         padding: 0 0.25em;
+         line-height: 1em;
+         transition: transform 150ms, font-size 150ms;
+      }
+
+      ::placeholder {
+         font-weight: normal;
+         opacity: 0.8;
+      }
+
+      input:not(:focus) {
+         &::placeholder {
+            color: transparent;
+         }
+      }
+
+      input:focus + span,
+      input:not(:placeholder-shown) + span {
+         transform: translate3d(
+            calc(
+               var(--ds-input-padding-horizontal) + var(--ds-input-border-width) -
+                  0.25em
+            ),
+            calc(-1 * (var(--ds-input-height) / 2)),
+            0
+         );
+         background: linear-gradient(
+            transparent 20%,
+            white 0px,
+            white 70%,
+            transparent 0px
+         );
+         font-size: 0.75em;
+      }
+   }
+
+   input {
+      width: 100%;
+      min-width: 100px;
+      display: block;
+      background: white;
+      border: var(--ds-input-border-width) var(--ds-input-border-style)
+         var(--ds-input-border-color);
+      border-radius: var(--ds-input-border-radius);
+      padding: 0 var(--ds-input-padding-horizontal);
+      transition: all 100ms;
+      font-size: 1rem;
+      color: var(--ds-input-font-color);
+      font-weight: var(--ds-input-font-weight);
+
+      &:hover:not(:focus) {
+         background: var(--ds-color-gray-200);
+      }
+
+      &:focus {
+         outline: none;
+         box-shadow: 0 0 0 0.15em var(--ds-color-primary-300);
+      }
+   }
+}

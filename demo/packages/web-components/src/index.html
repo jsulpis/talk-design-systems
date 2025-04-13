@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <!-- Base Tokens (colors, spacings, ...) -->
+    <link rel="stylesheet" href="/@ds/tokens/css/theme.css" />
+    <!-- Base Styles (reset, typography, ...) -->
+    <link rel="stylesheet" href="/@ds/css/dist/base.css" />
+    <!-- Custom Elements -->
+    <script type="module" src="/build/ds-web-components.esm.js"></script>
+    <script nomodule src="/build/ds-web-components.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        height: 100svh;
+        display: grid;
+        place-items: center;
+        background: var(--ds-color-gray-100);
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <ds-input label="Name" placeholder="John Doe"></ds-input>
+      <ds-input label="Email" placeholder="john@doe.com" required></ds-input>
+      <ds-button>Send</ds-button>
+    </form>
+  </body>
+</html>

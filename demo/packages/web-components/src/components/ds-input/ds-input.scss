@@ -1,0 +1,9 @@
+@use '../../../node_modules/@ds/css/dist/components/input.css';
+
+ds-input {
+  display: inline-flex;
+
+  input {
+    width: 100%;
+  }
+}

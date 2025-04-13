@@ -1,5 +1,6 @@
 import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
+import { reactOutputTarget } from '@stencil/react-output-target';
 
 export const config: Config = {
   namespace: 'ds-web-components',
@@ -21,9 +22,13 @@ export const config: Config = {
     {
       type: 'docs-readme',
     },
+    reactOutputTarget({
+      customElementsDir: '',
+      outDir: '../react/lib/components/stencil-generated/',
+    }),
     {
       type: 'www',
-      serviceWorker: null, // disable service workers
+      serviceWorker: null,
       copy: [
         {
           src: '../node_modules/@ds/tokens/css/theme.css',

@@ -18,22 +18,36 @@
         flex-direction: column;
         gap: 1rem;
       }
+
+      h1 {
+        display: flex;
+        align-items: center;
+        gap: 0.25em;
+        margin-bottom: 1rem;
+
+        img {
+          height: 1em;
+        }
+      }
     </style>
   </head>
 
   <body>
-    <form>
-      <label class="ds-input">
-        <input type="text" placeholder="John Doe" required />
-        <span>Name</span>
-      </label>
+    <main>
+      <h1><img src="/css.svg" alt="CSS" />Login</h1>
+      <form>
+        <label class="ds-input">
+          <input type="text" placeholder="John Doe" required />
+          <span>Name</span>
+        </label>
 
-      <label class="ds-input">
-        <input type="email" placeholder="john@doe.com" required />
-        <span>Email</span>
-      </label>
+        <label class="ds-input">
+          <input type="email" placeholder="john@doe.com" required />
+          <span>Email</span>
+        </label>
 
-      <button class="ds-button">Send</button>
-    </form>
+        <button class="ds-button">Send</button>
+      </form>
+    </main>
   </body>
 </html>

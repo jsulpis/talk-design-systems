@@ -47,4 +47,8 @@ export const config: Config = {
   testing: {
     browserHeadless: 'shell',
   },
+  devServer: {
+    port: 5173,
+    openBrowser: false,
+  },
 };

@@ -12,7 +12,7 @@ export class DsButton {
    * The type of the button
    * @default "button"
    */
-  @Prop() type: 'button' | 'submit' | 'reset' = 'button';
+  @Prop() type: 'button' | 'submit' | 'reset' = 'submit';
 
   /**
    * If the button is disabled

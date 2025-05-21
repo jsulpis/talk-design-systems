@@ -14,7 +14,7 @@ Our custom button component
 | Property   | Attribute  | Description               | Type                              | Default     |
 | ---------- | ---------- | ------------------------- | --------------------------------- | ----------- |
 | `disabled` | `disabled` | If the button is disabled | `boolean`                         | `undefined` |
-| `type`     | `type`     | The type of the button    | `"button" \| "reset" \| "submit"` | `'button'`  |
+| `type`     | `type`     | The type of the button    | `"button" \| "reset" \| "submit"` | `'submit'`  |
 
 
 ----------------------------------------------

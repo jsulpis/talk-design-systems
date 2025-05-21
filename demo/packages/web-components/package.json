@@ -1,6 +1,5 @@
 {
   "name": "@ds/web-components",
-  "version": "0.0.1",
   "description": "Stencil Component Starter",
   "license": "MIT",
   "exports": {

@@ -10,7 +10,7 @@ import { Component, h, Prop } from '@stencil/core';
 export class DsButton {
   /**
    * The type of the button
-   * @default "button"
+   * @default "submit"
    */
   @Prop() type: 'button' | 'submit' | 'reset' = 'submit';
 

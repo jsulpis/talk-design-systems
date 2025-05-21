@@ -17,7 +17,7 @@ export namespace Components {
         "disabled": boolean;
         /**
           * The type of the button
-          * @default "button"
+          * @default "submit"
          */
         "type": 'button' | 'submit' | 'reset';
     }
@@ -81,7 +81,7 @@ declare namespace LocalJSX {
         "disabled"?: boolean;
         /**
           * The type of the button
-          * @default "button"
+          * @default "submit"
          */
         "type"?: 'button' | 'submit' | 'reset';
     }
